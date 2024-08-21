@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-mainBackground">
+    <div class="flex">
+      <!-- ini menu kiri -->
+      <div
+        class="w-[300px] h-full relative m-0 pt-1 px-[30px] pb-[50px] overflow-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+      >
+        <img
+          src="../src/logo/logo.png"
+          class="w-[149px] h-[48px] mx-auto my-[30px]"
+        />
+        <div class="font-[500] border-b border-borderMenu mb-[30px]">
+          <p class="text-titleMenu text-[14px]">GENERAL</p>
+          <!-- kumpulan nav -->
+          <div class="pb-[24px]">
+            <a
+              class="flex w-full h-[48px] text-titleMenu items-center mt-[18px] cursor-pointer border-borderMenu border rounded-3xl pl-3"
+            >
+              <img src="../src/logo/box.png" class="w-6 h-6" />
+              <p class="ml-3">Overview</p>
+            </a>
+            <a
+              class="flex w-full h-[48px] text-titleMenu items-center mt-[18px] cursor-pointer border-borderMenu border rounded-3xl pl-3"
+            >
+              <img src="../src/logo/people.png" class="w-6 h-6" />
+              <p class="ml-3">My People</p>
+            </a>
+            <a
+              class="flex w-full h-[48px] bg-hoverMenu text-mainBackground items-center mt-[18px] cursor-pointer border-borderMenu border rounded-3xl pl-3 shadow-[0_15px_23px_-15px_#FFD88D]"
+            >
+              <img src="../src/logo/task.png" class="w-6 h-6" />
+              <p class="ml-3">Manage Task</p>
+            </a>
+            <a
+              class="flex w-full h-[48px] text-titleMenu items-center mt-[18px] cursor-pointer border-borderMenu border rounded-3xl pl-3"
+            >
+              <img src="../src/logo/crown.png" class="w-6 h-6" />
+              <p class="ml-3">Rewards</p>
+            </a>
+            <a
+              class="flex w-full h-[48px] text-titleMenu items-center mt-[18px] cursor-pointer border-borderMenu border rounded-3xl pl-3"
+            >
+              <img src="../src/logo/git.png" class="w-6 h-6" />
+              <p class="ml-3">AI Customs</p>
+            </a>
+          </div>
+        </div>
+        <div class="font-[500]">
+        <p class="text-titleMenu text-[14px]">Other</p>
+        <a
+          class="flex w-full h-[48px] text-titleMenu items-center mt-[24px] cursor-pointer border-borderMenu border rounded-3xl pl-3"
+        >
+          <img src="../src/logo/setting.png" class="w-6 h-6" />
+          <p class="ml-3">Settings</p>
+        </a>
+        <a
+          class="flex w-full h-[48px] text-titleMenu items-center mt-[18px] cursor-pointer border-borderMenu border rounded-3xl pl-3"
+        >
+          <img src="../src/logo/chat.png" class="w-6 h-6" />
+          <p class="ml-3">Help center</p>
+        </a>
+        <a
+          class="flex w-full h-[48px] text-titleMenu items-center mt-[18px] cursor-pointer border-borderMenu border rounded-3xl pl-3"
+        >
+          <img src="../src/logo/cancel.png" class="w-6 h-6" />
+          <p class="ml-3">Logout</p>
+        </a>
+    </div>
+      </div>
+      <!-- main body -->
+      <div
+        class="w-full h-full bg-[#1A1531] rounded-tl-[2.5em] rounded-bl-[2.5em] p-[50px] flex flex-col overflow-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+      >
+      <!-- search bar -->
+      <div class="w-full h-[80px] bg-bodyContent p-4 rounded-2xl flex">
+        <input type="text" placeholder="Search by report name..." class="w-[400px] h-[48px] pl-4 rounded-3xl bg-transparent border border-borderMenu mr-auto">
+        <div class=" w-[305px] h-12 flex items-center justify-between">
+            <div class="w-[108px] flex items-center ">
+                <a class="border border-borderMenu p-3 mr-3 rounded-full"><img src="../src/logo/notifinbox.png" class="size-6"></a>
+                <a class="border border-borderMenu p-3 rounded-full"><img src="../src/logo/messanger.png" class="size-6"></a>
+            </div>
+            <!-- profile -->
+            <div class="flex items-center pl-5 border-l border-borderMenu">
+                <!-- name -->
+                <div class="flex flex-col mr-2">
+                    <p class="text-greetingText text-right">Howdy,</p>
+                    <p class="text-titleMenu">Ramzi Akbar</p>
+                </div>
+                <img src="./logo/Kohami.png" class="size-12 rounded-full">
+            </div>
+        </div>
+      </div>
+      <!-- Title body -->
+      <div class="flex justify-between items-center my-[30px]">
+        <div class="flex flex-col">
+            <h1 class="text-[30px] font-extrabold text-titleMenu">Manage Task</h1>
+            <p class="text-greetingText">Set the goal to grow your company</p>
+        </div>
+        <a class="text-center py-3 px-[20px] font-semibold text-titleMenu cursor-pointer bg-buttonBlue rounded-[50px]">Add new text</a>
+      </div>
+      <!-- main content -->
+      <div class="flex flex-col">
+        <!-- content -->
+        <div class="bg-bodyContent h-[131px] w-full p-[20px] flex justify-between items-center rounded-3xl ">
+            <!-- title -->
+            <div class="flex flex-col">
+                <div class="flex">
+                    <img src="../src/logo/logocontent1.png" class="size-[50px]">
+                    <div class="flex flex-col ml-3">
+                      <p class="font-bold text-[18px] text-titleMenu">Install Figma on Windows Server</p>
+                      <p class="text-greetingText text-[14px]">Created at 22 Agustus 2024</p>
+                    </div>
+                </div>
+                <!-- description -->
+                <div class="flex mt-[20px]">
+                  <div class="text-greetingText flex mr-4"><img src="./logo/stack.png" class="size-[20px] mr-1"> High</div>
+                  <div class="text-notCompleted flex mr-4"><img src="./logo/time.png" class="size-[20px] mr-1"> 23 Mei 2024</div>
+                  <div class="text-greetingText flex mr-4"><img src="./logo/flag.png" class="size-[20px] mr-1"> In Progress</div>
+                  <div class="text-greetingText flex mr-4"><img src="./logo/orang.png" class="size-[20px] mr-1"> Muni</div>
+                </div>
+            </div>
+            <!-- delete button -->
+            <a class="flex items-center border border-notCompleted text-notCompleted text-[1rem] py-3 px-[20px] h-[48px] w-[93px] font-semibold cursor-pointer rounded-3xl">Delete</a>
+        </div>
+        <!--  -->
+        <div class="bg-bodyContent h-[131px] w-full p-[20px] flex justify-between items-center rounded-3xl mt-6">
+          <!-- title -->
+          <div class="flex flex-col">
+              <div class="flex">
+                  <img src="../src/logo/logocontent2.png" class="size-[50px]">
+                  <div class="flex flex-col ml-3">
+                    <p class="font-bold text-[18px] text-titleMenu">Download RAM Upgrade to 1280Mbps</p>
+                    <p class="text-greetingText text-[14px]">Created at 22 Agustus 2024</p>
+                  </div>
+              </div>
+              <!-- description -->
+              <div class="flex mt-[20px]">
+                <div class="text-greetingText flex mr-4"><img src="./logo/stack.png" class="size-[20px] mr-1"> Medium</div>
+                <div class="text-notCompleted flex mr-4"><img src="./logo/time.png" class="size-[20px] mr-1"> 23 Mei 2024</div>
+                <div class="text-Completed flex mr-4"><img src="./logo/completedflag.png" class="size-[20px] mr-1"> Completed</div>
+                <div class="text-greetingText flex mr-4"><img src="./logo/orang.png" class="size-[20px] mr-1"> Kohami</div>
+              </div>
+          </div>
+          <!-- delete button -->
+          <a class="flex items-center border border-notCompleted text-notCompleted text-[1rem] py-3 px-[20px] h-[48px] w-[93px] font-semibold cursor-pointer rounded-3xl">Delete</a>
+      </div>
+      <!--  -->
+      <div class="bg-bodyContent h-[131px] w-full p-[20px] flex justify-between items-center rounded-3xl mt-6">
+        <!-- title -->
+        <div class="flex flex-col">
+            <div class="flex">
+                <img src="../src/logo/logocontent3.png" class="size-[50px]">
+                <div class="flex flex-col ml-3">
+                  <p class="font-bold text-[18px] text-titleMenu">Payment setting for Kios Apps</p>
+                  <p class="text-greetingText text-[14px]">Created at 22 Agustus 2024</p>
+                </div>
+            </div>
+            <!-- description -->
+            <div class="flex mt-[20px]">
+              <div class="text-greetingText flex mr-4"><img src="./logo/stack.png" class="size-[20px] mr-1"> High</div>
+              <div class="text-notCompleted flex mr-4"><img src="./logo/time.png" class="size-[20px] mr-1"> 23 Mei 2024</div>
+              <div class="text-greetingText flex mr-4"><img src="./logo/flag.png" class="size-[20px] mr-1"> In Progress</div>
+              <div class="text-greetingText flex mr-4"><img src="./logo/orang.png" class="size-[20px] mr-1"> Ramzi</div>
+            </div>
+        </div>
+        <!-- delete button -->
+        <a class="flex items-center border border-notCompleted text-notCompleted text-[1rem] py-3 px-[20px] h-[48px] w-[93px] font-semibold cursor-pointer rounded-3xl">Delete</a>
+    </div>
+    <a href="../src/notask.html" class="hover:underline text-titleMenu">click untuk lihat Versi Yang No task</a>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
